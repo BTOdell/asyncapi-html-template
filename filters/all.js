@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const React = require('react');
 const ReactDOMServer = require('react-dom/server');
-const { default: AsyncApiComponent, hljs } = require('@asyncapi/react-component');
+const { default: AsyncApiComponent, hljs } = require('@btodell/asyncapi-react-component');
 const { AsyncAPIDocument } = require('@asyncapi/parser');
 
 const filter = module.exports;

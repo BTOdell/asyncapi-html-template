@@ -1,4 +1,4 @@
-import { hljs } from '@asyncapi/react-component';
+import { hljs } from '@btodell/asyncapi-react-component';
 import { AsyncAPIDocument } from "@asyncapi/parser";
 
 import {
@@ -19,7 +19,7 @@ describe('Filters', () => {
 
   describe('.includeFile', () => {
     it('should read content of file', async () => {
-      const content = includeFile('node_modules/@asyncapi/react-component/browser/standalone/without-parser.js');
+      const content = includeFile('node_modules/@btodell/asyncapi-react-component/browser/standalone/without-parser.js');
 
       expect(content instanceof Buffer).toEqual(true);
       expect(content.toString().length > 0).toEqual(true);

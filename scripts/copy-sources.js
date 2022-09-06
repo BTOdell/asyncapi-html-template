@@ -1,6 +1,6 @@
 /**
- * Script that copies all given files from `node_modules` to the `template` folder. 
- * It is runned every time it package is published. 
+ * Script that copies all given files from `node_modules` to the `template` folder.
+ * It is runned every time it package is published.
  * This way we have an up to date sources to render the template.
  */
 
@@ -11,8 +11,8 @@ const copyFile = util.promisify(fs.copyFile);
 
 // source (node_modules): destination (template)
 const filesToCopy = {
-  "@asyncapi/react-component/browser/standalone/without-parser.js": "js/asyncapi-ui.min.js",
-  "@asyncapi/react-component/styles/default.min.css": "css/asyncapi.min.css",
+  "@btodell/asyncapi-react-component/browser/standalone/without-parser.js": "js/asyncapi-ui.min.js",
+  "@btodell/asyncapi-react-component/styles/default.min.css": "css/asyncapi.min.css",
 };
 
 async function copyFiles() {
